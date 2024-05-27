@@ -39,6 +39,7 @@ struct MenuView: View {
                 .background(
                     RoundedRectangle(cornerRadius: 18)
                         .stroke(.orangeCustom, lineWidth: 10)
+                    // ini mungkin bisa dibikin asset aja warnanya, kayak yang .orangeCustom
                         .fill(Color(hex: 0xFFFAF1))
                         .shadow(color: Color.black.opacity(0.5), radius: 10, x: 0, y: 5)
                 )

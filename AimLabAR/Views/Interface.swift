@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Mungkin namanya jangan interface, bisa yang lain kayak ParentView atau MainView - Elian
 struct Interface: View {
     @State var currPage: String = "Menu"
     @State var score: Int = 0

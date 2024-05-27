@@ -84,13 +84,13 @@
 			path = SoundManager;
 			sourceTree = "<group>";
 		};
-		5F22875F2C01937E002E28FF /* Extension */ = {
+		5F22875F2C01937E002E28FF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				5F2287602C019388002E28FF /* Color.swift */,
 				5F2287622C01A7B0002E28FF /* View.swift */,
 			);
-			path = Extension;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5F2287782C037324002E28FF /* Views */ = {
@@ -102,6 +102,14 @@
 				5FDF885E2BFC82CD006B0F08 /* MenuView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5F2287792C0480EA002E28FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5FDF88622BFC8899006B0F08 /* ScoreModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5FB1B7162BF5DA4E00DF6117 = {
@@ -144,10 +152,10 @@
 		5FB1B7322BF5DE9300DF6117 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				5F22875F2C01937E002E28FF /* Extension */,
+				5F2287792C0480EA002E28FF /* Models */,
+				5F22875F2C01937E002E28FF /* Extensions */,
 				5F22875A2C006FFD002E28FF /* SoundManager */,
 				5F2287592C006FEE002E28FF /* Fonts */,
-				5FDF88622BFC8899006B0F08 /* ScoreModel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -399,6 +407,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -431,6 +440,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

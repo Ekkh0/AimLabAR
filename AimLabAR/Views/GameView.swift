@@ -12,7 +12,7 @@ import RealityKit
 
 struct GameView : View {
     @State var targetCount: Int = Int.random(in: 1...4)
-    @State var timer: Int = 1
+    @State var timer: Int = 60
     @State var ammo: Int = 8
     @State var reloading: Bool = false
     @Binding var score: Int
@@ -141,8 +141,11 @@ struct GameView : View {
             .padding(.top, 60)
             .zIndex(3)
         }
+        .frame(width: UIScreen.main.bounds.maxX, height: UIScreen.main.bounds.maxY)
+        .background(Color.green)
         .edgesIgnoringSafeArea(.all)
         .onAppear{
+            score = 0
             Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
                 withAnimation(Animation.linear(duration: 1)){
                     if timer == 15 {
@@ -160,6 +163,7 @@ struct GameView : View {
     }
 }
 
+// Ini mungkin buat view tambahannya bisa di bikin file terpisah, tapi dikelompokin jadi satu folder GameView, soalnya jadi kepanjangan - Elian
 struct BackdropView: UIViewRepresentable {
     public func makeUIView(context: Context) -> UIVisualEffectView {
         let view = UIVisualEffectView()
